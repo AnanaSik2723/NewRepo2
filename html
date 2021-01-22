@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savca Ana</title>
+</head>
+
+<body>
+    <button id="button__orange-body">Orange</button>
+    <ul id="ul__list">
+        <li>0</li>
+    </ul>
+
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        document.body.style.backgroundColor = "red";
+
+
+        setTimeout(() => {
+            document.body.style.backgroundColor = "green";
+        }, 3000);
+    })
+    document.getElementById("button__orange-body").addEventListener("click", () => {
+        document.body.style.backgroundColor = "orange";
+    })
+</script>
+<script src="main.js"></script>
+
+</html>
